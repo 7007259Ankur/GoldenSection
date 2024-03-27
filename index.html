@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Section Optimizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Golden Section Optimizer</h1>
+        <div class="form">
+            <label for="function">Enter your function:</label>
+            <input type="text" id="function" placeholder="e.g., x^2">
+            <label for="interval">Enter interval [a, b]:</label>
+            <input type="text" id="interval" placeholder="e.g., 0, 5">
+            <label for="tolerance">Enter tolerance:</label>
+            <input type="text" id="tolerance" placeholder="e.g., 0.001">
+            <button onclick="optimize('min')">Minimize</button>
+            <button onclick="optimize('max')">Maximize</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
